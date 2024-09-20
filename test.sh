@@ -16,6 +16,11 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 # Update package list and install Node.js
 sudo apt-get update
 sudo apt-get install -y nodejs
+npm i -g yarn
+
+cd /var/www/pterodactyl # Replace with actual path
+yarn
+yarn add cross-env
 
 # Install other necessary packages
 sudo apt install -y zip unzip git curl wget
