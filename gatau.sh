@@ -21,6 +21,7 @@ npm i -g yarn
 cd /var/www/pterodactyl # Replace with actual path
 yarn
 yarn add cross-env
+cd
 
 # Install other necessary packages
 sudo apt install -y zip unzip git curl wget
