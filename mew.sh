@@ -54,6 +54,8 @@ function verify_token() {
         echo -e "${YELLOW}Token dibuat pada: $CREATED_AT${NC}"
         echo -e "${YELLOW}Token berlaku hingga: $EXPIRES_AT${NC}"
         echo -e "${GREEN}Sisa waktu berlaku: $EXPIRES_IN.${NC}"
+       
+        display_menu
     else
         MESSAGE=$(echo "$RESPONSE" | grep -oP '"message":"\K[^"]+')
         echo -e "${RED}AKSES GAGAL. $MESSAGE.${NC}"
