@@ -30,7 +30,7 @@ function verify_token() {
     done
     echo ""
     #url api
-    API_URL="http://143.198.193.90:2101/verify-token/$USER_TOKEN"
+    API_URL="http://143.198.193.90:2101/verify-token/$TOKEN"
     
     # Memeriksa token menggunakan curl
     RESPONSE=$(curl -s "$API_URL")
